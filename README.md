@@ -1,4 +1,4 @@
-# Own Your Focus Loop with PuNiAd 🚀
+# Own Your Focus Loop with PuNiAd 
 
 Welcome to the **PuNiAd Landing Page & Web Hub**. This repository hosts the premium, responsive landing page and download portal built to present the PuNiAd Unified Focus Ecosystem to the world and coordinate Android installation APK packages.
 
