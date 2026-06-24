@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuNiAd - Study Tracker, AI Nutrition & Routine Sync</title>
+    <meta name="description"
+        content="Watch offline lecture videos anywhere—while traveling or walking. The daily 5 or 10 minutes pile up to completed courses with no need to carry physical notes, backed by a friendly UI.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo-container">
+            <img src="/uploads/logo.png" alt="PuNiAd Logo" class="logo-img" />
+            <span class="logo-text">PuNiAd<span>.</span></span>
+        </div>
+
+        <div class="menu-toggle" id="mobileBurger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#study-spotlight">Study Hub</a></li>
+                <li><a href="#nutrition-spotlight">AI Nutrition</a></li>
+                <li><a href="#commitments-spotlight">Commitments</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <a href="downloads/puniad-app.apk" class="header-btn download-btn-trigger" download>Download APK</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Unified Focus Ecosystem</span>
+            <h1 class="hero-title">Own Your Focus Loop with <span>PuNiAd</span></h1>
+            <p class="hero-desc">Play offline lecture videos anywhere—even while traveling or walking. The daily 5 or 10
+                minutes you spend study-logging will pile up to completed courses without you even noticing. With our
+                friendly user interface and instant screenshot-note capabilities, you will never need to carry physical
+                notebooks on the move.</p>
+
+            <div class="hero-buttons">
+                <a href="downloads/puniad-app.apk" class="btn-primary download-btn-trigger" download>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download APK
+                </a>
+                <a href="#features" class="btn-secondary">
+                    Explore Features
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h4>5K+</h4>
+                    <p>Study Hours Logged</p>
+                </div>
+                <div class="stat-item">
+                    <h4>25K+</h4>
+                    <p>Meals AI-Analyzed</p>
+                </div>
+                <div class="stat-item">
+                    <h4>99.9%</h4>
+                    <p>Sync Integrity Uptime</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Graphic (3D Phone + Tablet Sync System) -->
+        <div class="hero-graphic">
+            <div class="mockup-container">
+                <!-- 3D angled phone mockup -->
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="phone-notch"></div>
+                        <div class="phone-app-header">
+                            <span class="phone-logo">PuNiAd</span>
+                            <!-- Avatar SVG replacing the dollar sign -->
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="phone-app-body">
+                            <div class="phone-card">
+                                <div class="phone-card-title">DBMS Lecture 2</div>
+                                <div class="phone-card-bar">
+                                    <div class="phone-card-progress" style="width: 78%;"></div>
+                                </div>
+                            </div>
+                            <div class="phone-card">
+                                <div class="phone-card-title">Nutrition Target</div>
+                                <div class="phone-card-bar">
+                                    <div class="phone-card-progress"
+                                        style="width: 62%; background: var(--secondary-teal);"></div>
+                                </div>
+                            </div>
+                            <div class="phone-card">
+                                <div class="phone-card-title">Hydration (2.4L / 3.0L)</div>
+                                <div class="phone-card-bar">
+                                    <div class="phone-card-progress"
+                                        style="width: 80%; background: var(--tertiary-purple);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flat tablet mockup -->
+                <div class="tablet-mockup">
+                    <div class="tablet-screen">
+                        <div class="tablet-app-grid">
+                            <div class="tablet-sidebar">
+                                <div class="tablet-sidebar-item" style="width: 80%;"></div>
+                                <div class="tablet-sidebar-item" style="width: 60%;"></div>
+                                <div class="tablet-sidebar-item" style="width: 70%;"></div>
+                            </div>
+                            <div class="tablet-main">
+                                <div class="tablet-box" style="height: 60px;">
+                                    <strong>DBMS Study Notes</strong>
+                                    <p style="font-size: 0.55rem; color: var(--text-muted); margin-top: 4px;">Lecture 2
+                                        completed successfully. Synced 9 screenshot tags safely.</p>
+                                </div>
+                                <div class="tablet-box" style="height: 50px;">
+                                    <strong>Daily AI Summary</strong>
+                                    <p style="font-size: 0.55rem; color: var(--text-muted); margin-top: 4px;">workout lower body.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vector sync lines (Arched over the top, running behind cards) -->
+                <svg class="sync-vector-overlay" viewBox="0 0 500 500">
+                    <path class="sync-line" d="M150,320 C180,120 320,60 400,120" fill="none" stroke-width="2.5" />
+                    <path class="sync-line" d="M400,120 C320,60 180,120 150,320" fill="none" stroke-width="2.5"
+                        style="animation-delay: -10s;" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Features Matrix Grid -->
+    <section class="features-section" id="features">
+        <div class="section-header reveal">
+            <span class="section-tag">Feature Matrix</span>
+            <h2 class="section-title">Built with Professional Integrity</h2>
+            <p class="section-desc">PuNiAd is designed to work completely offline, allowing you to track your habits
+                anywhere, with smart cloud backup when you go online.</p>
+        </div>
+
+        <div class="features-grid">
+            <!-- 1. Offline Video Scan -->
+            <div class="feature-card reveal">
+                <div class="feature-icon-container blue-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                        <line x1="7" y1="2" x2="7" y2="22"></line>
+                        <line x1="17" y1="2" x2="17" y2="22"></line>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <line x1="2" y1="7" x2="7" y2="7"></line>
+                        <line x1="2" y1="17" x2="7" y2="17"></line>
+                        <line x1="17" y1="17" x2="22" y2="17"></line>
+                        <line x1="17" y1="7" x2="22" y2="7"></line>
+                    </svg>
+                </div>
+                <h3>Distraction-Free Video Player</h3>
+                <p>Play study videos directly from your local files. The app automatically structures them into
+                    organized subjects and chapters, allowing you to watch and track your progress completely offline.
+                </p>
+            </div>
+
+            <!-- 2. Gesture Notes Editor -->
+            <div class="feature-card reveal">
+                <div class="feature-icon-container teal-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 20h9"></path>
+                        <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                    </svg>
+                </div>
+                <h3>Interactive Notes & Screenshots</h3>
+                <p>Take structured notes during lectures. Tap a single button to instantly capture a question or answer
+                    snapshot into your notes. Scroll back through your timestamped review feed with inline lecture
+                    captures—no separate app or gallery needed.</p>
+            </div>
+
+            <!-- 3. AI-Powered Nutrition Center -->
+            <div class="feature-card reveal">
+                <div class="feature-icon-container gold-icon">
+                    <!-- Fork & Knife SVG replacing the dollar sign -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+                        <path d="M7 2v20"></path>
+                        <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path>
+                    </svg>
+                </div>
+                <h3>Smart Meal Breakdown</h3>
+                <p>Log meals easily. Gemini AI analyzes each ingredient separately—identifying macros, calorie density,
+                    and portion balance automatically. A built-in offline calculator scales saved meals instantly
+                    without any API call.</p>
+            </div>
+
+            <!-- 4. SCD Commitment Goals -->
+            <div class="feature-card reveal">
+                <div class="feature-icon-container purple-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                </div>
+                <h3>Adaptive Daily Goals</h3>
+                <p>Set daily targets for study, hydration, and journaling. Adjust your goals at any time—your past
+                    achievement history is preserved correctly so you can see your consistency grow.</p>
+            </div>
+
+            <!-- 5. Workout & Water Log -->
+            <div class="feature-card reveal">
+                <div class="feature-icon-container blue-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                        <line x1="6" y1="1" x2="6" y2="4"></line>
+                        <line x1="10" y1="1" x2="10" y2="4"></line>
+                        <line x1="14" y1="1" x2="14" y2="4"></line>
+                    </svg>
+                </div>
+                <h3>Routine & Hydration Tracker</h3>
+                <p>Keep a personal log of your daily workouts and water intake. Calculated parameters adapt dynamically
+                    to help you reach your custom targets.</p>
+            </div>
+
+            <!-- 6. Daily Journal checklists -->
+            <div class="feature-card reveal">
+                <div class="feature-icon-container teal-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                </div>
+                <h3>Reflective Journal & Tasks</h3>
+                <p>Reflect on your daily wins, challenges, and thoughts. Keep checklists of daily tasks to clear your
+                    mind and stay focused on what matters.</p>
+            </div>
+
+            <!-- 7. AI Health Summaries -->
+            <div class="feature-card reveal">
+                <div class="feature-icon-container gold-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                        </path>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                </div>
+                <h3>Smart Daily Advice</h3>
+                <p>Synthesizes your diet, hydration, and exercise into clear, personalized suggestions on your dashboard
+                    to help you recover and improve daily.</p>
+            </div>
+
+            <!-- 8. Privacy-Protected Sync -->
+            <div class="feature-card reveal">
+                <div class="feature-icon-container purple-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="23 4 23 10 17 10"></polyline>
+                        <polyline points="1 20 1 14 7 14"></polyline>
+                        <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                    </svg>
+                </div>
+                <h3>Privacy-Protected Sync</h3>
+                <p>Choose exactly what information is backed up to the cloud. Keeps your data synchronized in both
+                    directions between all your devices with zero duplicate records.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Spotlight 1 (Study Screen Notes & Pinch-to-Zoom) -->
+    <section class="interactive-section" id="study-spotlight">
+        <div class="mockup-grid">
+
+            <!-- Animated CSS mockup of Study Notes -->
+            <div class="study-mockup-frame reveal">
+                <div class="mock-window-dots">
+                    <span></span><span></span><span></span>
+                </div>
+
+                <!-- Player area -->
+                <div class="study-mock-player">
+                    <div class="study-mock-video">
+                        <!-- <span class="local-scan-badge">
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                            Movies/DBMS
+                        </span> -->
+                        <h4>Lecture 2: Normalization Forms</h4>
+                        <div class="player-pause-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3">
+                                <line x1="18" y1="4" x2="18" y2="20"></line>
+                                <line x1="6" y1="4" x2="6" y2="20"></line>
+                            </svg>
+                        </div>
+                        <div class="video-progress-mock">
+                            <div class="video-progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Badges & Capture Menu -->
+                <div class="study-mock-actions">
+                    <div class="mock-speed-controls">
+                        <span class="mock-speed-badge">1.5x</span>
+                    </div>
+                    <div class="mock-capture-menu">
+                        <span class="mock-cap-btn active" id="capQuestionBtn">Question</span>
+                        <span class="mock-cap-btn">Answer</span>
+                        <span class="mock-cap-btn">Note</span>
+                    </div>
+                </div>
+
+                <!-- Text notes box -->
+                <div class="study-mock-editor">
+                    <div class="editor-textarea-mock">
+                        <span class="typewriter-text" id="typewriterText"></span>
+
+                        <!-- Simulated zoom block -->
+                        <div class="mock-screenshot-block" id="mockScreenshotBlock">
+                            <div
+                                style="background-color:#cbd5e1; height: 90px; display:flex; align-items:center; justify-content:center; color:#475569; font-size:0.8rem; font-weight:600;">
+                                [Lecture Slide Frame]
+                            </div>
+                            <div class="mock-screenshot-footer">shot_DBMS_L2_1803_question.jpg</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Descriptive Text -->
+            <div class="spotlight-text reveal">
+                <span class="spotlight-tag">Offline-First Education</span>
+                <h2 class="spotlight-title">Coaching-Center Study Hub directly on your Storage</h2>
+                <p class="spotlight-desc">Organize your study videos inside a local folder and watch them. PuNiAd maps
+                    them into structured courses completely offline, keeping your study loop distraction-free.</p>
+                <ul class="spotlight-list">
+                    <li><i>1</i> Auto-mapping video files into Course playlists.</li>
+                    <li><i>2</i> Split screen markers (Q, A, N) to structure content logically.</li>
+                    <li><i>3</i> Simple pinch gestures to zoom into lecture screens and text in the reader.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Spotlight 2 (AI Nutrition & Portion Slider) -->
+    <section class="spotlight-section" id="nutrition-spotlight">
+        <div class="spotlight-row">
+
+            <div class="spotlight-text reveal">
+                <span class="spotlight-tag">AI Nutrition Tracker</span>
+                <h2 class="spotlight-title">Ingredient-Level Breakdowns & Local Portion Calculators</h2>
+                <p class="spotlight-desc">Log meals with multiple items easily. The app scales portion weights and
+                    calculates calorie details instantly in a clean breakdown table.</p>
+                <ul class="spotlight-list">
+                    <li><i>✓</i> Instant local scaling for saved meals without internet connection.</li>
+                    <li><i>✓</i> Detailed balance parameters: healthy fats, sugars, sodium, and fiber.</li>
+                    <li><i>✓</i> Easy-to-use corrections and manual adjustments.</li>
+                </ul>
+            </div>
+
+            <!-- Offline Portion Weight scaling widget -->
+            <div class="calc-demo-container reveal">
+                <div class="calc-title-box">
+                    <h3>Portion Calorie Scaler</h3>
+                    <p>Slide the weight to see instant, local offline calculation scaling</p>
+                </div>
+
+                <div class="calc-input-group">
+                    <div class="calc-input-label">
+                        <span>Portion Weight</span>
+                        <span class="calc-weight-val" id="weightValue">250 g</span>
+                    </div>
+                    <input type="range" min="50" max="600" value="250" class="calc-slider" id="weightSlider">
+                </div>
+
+                <div class="calc-grid">
+                    <div class="calc-metric-card calories-card">
+                        <div class="calc-metric-lbl">Energy</div>
+                        <div class="calc-metric-val" id="calcCalories">380</div>
+                    </div>
+                    <div class="calc-metric-card">
+                        <div class="calc-metric-lbl">Protein</div>
+                        <div class="calc-metric-val" id="calcProtein">10g</div>
+                    </div>
+                    <div class="calc-metric-card">
+                        <div class="calc-metric-lbl">Carbs</div>
+                        <div class="calc-metric-val" id="calcCarbs">58g</div>
+                    </div>
+                    <div class="calc-metric-card">
+                        <div class="calc-metric-lbl">Fats</div>
+                        <div class="calc-metric-val" id="calcFat">12g</div>
+                    </div>
+                    <div class="calc-metric-card">
+                        <div class="calc-metric-lbl">Fiber</div>
+                        <div class="calc-metric-val" id="calcFiber">4g</div>
+                    </div>
+                    <div class="calc-metric-card">
+                        <div class="calc-metric-lbl">Sugar</div>
+                        <div class="calc-metric-val" id="calcSugar">6g</div>
+                    </div>
+                </div>
+
+                <p class="calc-disclaimer">*Calculated values are scaled locally. Real-time logging uses ingredient
+                    reference tables for calorie estimations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Spotlight 3 (SCD Commitments Grid & Heatmap) -->
+    <section class="interactive-section" id="commitments-spotlight">
+        <div class="mockup-grid">
+
+            <!-- Simulated Calendar Heatmap & Goal Drawer -->
+            <div style="display:flex; flex-direction:column; gap:20px;" class="reveal">
+                <!-- Heatmap grid -->
+                <div class="calendar-heatmap-mock">
+                    <div class="heatmap-hdr">
+                        <span>June 2026</span>
+                        <span style="color:var(--primary-blue); font-size:0.75rem;">Consistency Score: 92%</span>
+                    </div>
+                    <div class="heatmap-grid">
+                        <div class="heatmap-day score-perfect">1</div>
+                        <div class="heatmap-day score-perfect">2</div>
+                        <div class="heatmap-day score-high">3</div>
+                        <div class="heatmap-day score-perfect">4</div>
+                        <div class="heatmap-day score-mid">5</div>
+                        <div class="heatmap-day score-perfect">6</div>
+                        <div class="heatmap-day score-perfect">7</div>
+                        <div class="heatmap-day score-high">8</div>
+                        <div class="heatmap-day score-perfect">9</div>
+                        <div class="heatmap-day score-perfect">10</div>
+                        <div class="heatmap-day score-mid">11</div>
+                        <div class="heatmap-day score-perfect">12</div>
+                        <div class="heatmap-day score-perfect">13</div>
+                        <div class="heatmap-day score-perfect">14</div>
+                        <div class="heatmap-day score-high">15</div>
+                        <div class="heatmap-day score-perfect">16</div>
+                        <div class="heatmap-day score-perfect">17</div>
+                        <div class="heatmap-day score-perfect">18</div>
+                        <div class="heatmap-day score-perfect">19</div>
+                        <div class="heatmap-day score-perfect">20</div>
+                        <div class="heatmap-day score-high">21</div>
+                        <div class="heatmap-day score-perfect">22</div>
+                        <div class="heatmap-day score-perfect" style="border: 2px solid var(--primary-blue);">23</div>
+                        <div class="heatmap-day">24</div>
+                        <div class="heatmap-day">25</div>
+                        <div class="heatmap-day">26</div>
+                        <div class="heatmap-day">27</div>
+                        <div class="heatmap-day">28</div>
+                    </div>
+                </div>
+
+                <!-- Goal adjustments drawer -->
+                <div class="drawer-mockup">
+                    <div class="drawer-header">Commitment Targets</div>
+                    <div class="drawer-body">
+                        <div class="drawer-stepper">
+                            <div class="stepper-header">
+                                <span>Lectures Target</span>
+                                <span>2 / day</span>
+                            </div>
+                            <div class="stepper-controls">
+                                <span class="stepper-btn">-</span>
+                                <span class="stepper-val">2</span>
+                                <span class="stepper-btn">+</span>
+                            </div>
+                        </div>
+                        <div class="drawer-stepper">
+                            <div class="stepper-header">
+                                <span>Hydration Target</span>
+                                <span>2000 ml</span>
+                            </div>
+                            <div class="stepper-controls">
+                                <span class="stepper-btn">-</span>
+                                <span class="stepper-val">2000 ml</span>
+                                <span class="stepper-btn">+</span>
+                            </div>
+                        </div>
+                        <button class="drawer-footer-btn" onclick="alert('Targets saved starting from today!')">Save
+                            Goals</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text Description -->
+            <div class="spotlight-text reveal">
+                <span class="spotlight-tag">Routine Scoring</span>
+                <h2 class="spotlight-title">Consistency-Preserved Habit Tracking</h2>
+                <p class="spotlight-desc">Upping your goals shouldn't wipe out your progress history. PuNiAd keeps track
+                    of your past achievements separately, so your historic consistency score stays accurate.</p>
+                <ul class="spotlight-list">
+                    <li><i>✓</i> Historical calibration values are preserved.</li>
+                    <li><i>✓</i> Flexible goals (lectures, notes, calorie balance, journaling, water intake).</li>
+                    <li><i>✓</i> Beautiful commitmentmaps reflecting consistent habits over weeks.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download APK Call to Action -->
+    <section class="download-section">
+        <div class="download-banner reveal">
+            <h2>Accelerate Your Focus Loop Today</h2>
+            <p>Get distraction-free offline lecture playing, AI-assisted Nutrition tracking, and cloud backup instantly.
+                Download the Android installation pack to begin.</p>
+
+            <a href="downloads/puniad-app.apk" class="btn-primary download-btn-trigger" download
+                style="background: white; color: var(--text-navy); box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download PuNiAd APK
+            </a>
+
+            <div class="download-meta">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/uploads/logo.png" alt="PuNiAd Logo" class="logo-img" style="margin-right: 8px;" />
+                <span class="logo-text">PuNiAd<span>.</span></span>
+            </div>
+            <ul class="footer-links">
+                <!-- <li><a href="#features">Features</a></li>
+                <li><a href="#study-spotlight">Study</a></li>
+                <li><a href="#nutrition-spotlight">Nutrition</a></li>
+                <li><a href="#commitments-spotlight">Commitments</a></li> -->
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="https://github.com/AdarshHkr" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom" style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+            <p>&copy; <span id="footerYear"></span> PuNiAd. All rights reserved. Built for professional productivity and
+                offline focus loop execution.</p>
+            <div class="footer-version-info" style="font-size: 0.8rem; opacity: 0.7; letter-spacing: 0.5px;">
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Version Selector Modal -->
+    <div id="versionModal" class="version-modal" style="display: none;">
+        <div class="version-modal-content">
+            <span class="close-version-modal">&times;</span>
+            <h2>Select Download Version</h2>
+            <p>Choose between our stable production build or get the latest experimental features instantly.</p>
+            <div class="version-options">
+                <a href="#" id="downloadStableLink" class="version-card">
+                    <div class="version-title">Stable Release</div>
+                    <div id="modalStableVer" class="version-number">v1.1.3</div>
+                    <div class="version-desc">Recommended for production consistency. Thoroughly tested,
+                        offline-resilient, and highly stable.</div>
+                    <div class="version-btn">Download Stable</div>
+                </a>
+                <a href="#" id="downloadLatestLink" class="version-card latest-card">
+                    <div class="version-title">Latest Beta</div>
+                    <div id="modalLatestVer" class="version-number">v1.1.3</div>
+                    <div class="version-desc">Contains experimental updates and the newest AI workout/macro-nutrition
+                        analytics.</div>
+                    <div class="version-btn">Download Latest</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
