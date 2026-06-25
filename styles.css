@@ -201,7 +201,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    padding: 160px 8% 80px 8%;
+    padding: 110px 8% 80px 8%;
     background: radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.04) 0%, transparent 50%),
         radial-gradient(circle at 10% 80%, rgba(13, 148, 136, 0.03) 0%, transparent 50%);
     display: grid;
@@ -324,16 +324,15 @@ nav {
 
 /* 3D-angled Phone Mockup */
 .phone-mockup {
-    position: absolute;
-    width: 230px;
-    height: 450px;
+    position: relative;
+    width: 240px;
+    height: 490px;
     background: #0f172a;
     border-radius: 36px;
     padding: 10px;
     box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.3);
-    left: 10%;
-    bottom: 5%;
-    transform: perspective(1000px) rotateY(15deg) rotateX(5deg) rotateZ(-3deg);
+    margin: 0 auto;
+    transform: perspective(1000px) rotateY(10deg) rotateX(4deg) rotateZ(-2deg);
     transition: var(--transition-smooth);
     z-index: 2;
 }
@@ -345,12 +344,20 @@ nav {
 .phone-screen {
     width: 100%;
     height: 100%;
-    background-color: var(--bg-slate-50);
+    background-color: #ffffff;
     border-radius: 28px;
     overflow: hidden;
     position: relative;
     display: flex;
     flex-direction: column;
+    padding-top: 18px;
+}
+
+.phone-app-image {
+    width: 100%;
+    height: calc(100% - 18px);
+    object-fit: fill;
+    object-position: center top;
 }
 
 .phone-notch {
@@ -1095,7 +1102,9 @@ nav {
 /* CSS simulated side goal drawer */
 .drawer-mockup {
     background: white;
-    width: 290px;
+    width: 100%;
+    max-width: 290px;
+    align-self: flex-start; /* Prevent stretching inside flex containers */
     border-radius: var(--radius-md);
     border: 1px solid var(--border-slate);
     box-shadow: var(--shadow-ambient);
@@ -1255,7 +1264,9 @@ nav {
     border-radius: var(--radius-md);
     border: 1px solid var(--border-slate);
     box-shadow: var(--shadow-ambient);
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
+    align-self: flex-start; /* Prevent stretching inside flex containers */
 }
 
 .heatmap-hdr {
@@ -1428,15 +1439,12 @@ footer {
     }
 
     .phone-mockup {
-        width: 190px;
-        height: 380px;
-        left: 15%;
-    }
-
-    .tablet-mockup {
-        width: 260px;
-        height: 190px;
-        right: 10%;
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: 200px;
+        height: 410px;
+        margin: 0 auto;
     }
 
     .mockup-grid {
@@ -1520,175 +1528,7 @@ footer {
     .stat-item h4 {
         font-size: 1.5rem;
     }
-}
 
-/* Version Selector Modal Styling */
-.version-modal {
-    position: fixed;
-    z-index: 10000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(15, 23, 42, 0.7);
-    backdrop-filter: blur(8px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.version-modal-content {
-    background: #ffffff;
-    border-radius: 20px;
-    max-width: 650px;
-    width: 100%;
-    padding: 40px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    position: relative;
-    animation: modalSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    border: 1px solid rgba(226, 232, 240, 0.8);
-}
-
-.version-modal-content h2 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #0f172a;
-    margin-top: 0;
-    margin-bottom: 12px;
-}
-
-.version-modal-content p {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1rem;
-    color: #64748b;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-
-.version-options {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.version-card {
-    flex: 1;
-    min-width: 260px;
-    border: 2px solid #e2e8f0;
-    border-radius: 14px;
-    padding: 24px;
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.25s ease;
-    display: flex;
-    flex-direction: column;
-    background: #f8fafc;
-    cursor: pointer;
-}
-
-.version-card:hover {
-    border-color: var(--primary-blue);
-    transform: translateY(-4px);
-    background: #ffffff;
-    box-shadow: 0 12px 24px -10px rgba(79, 70, 229, 0.15);
-}
-
-.version-card.latest-card:hover {
-    border-color: #10b981;
-    box-shadow: 0 12px 24px -10px rgba(16, 185, 129, 0.15);
-}
-
-.version-title {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 700;
-    font-size: 1.15rem;
-    color: #0f172a;
-    margin-bottom: 6px;
-}
-
-.version-number {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.7rem;
-    font-weight: 800;
-    color: var(--primary-blue);
-    margin-bottom: 12px;
-}
-
-.latest-card .version-number {
-    color: #10b981;
-}
-
-.version-desc {
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.9rem;
-    color: #64748b;
-    line-height: 1.5;
-    margin-bottom: 24px;
-    flex-grow: 1;
-}
-
-.version-btn {
-    text-align: center;
-    padding: 12px;
-    background: var(--primary-blue);
-    color: #ffffff;
-    border-radius: 8px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: all 0.2s;
-}
-
-.version-card:hover .version-btn {
-    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
-}
-
-.latest-card .version-btn {
-    background: #10b981;
-}
-
-.latest-card:hover .version-btn {
-    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
-}
-
-.close-version-modal {
-    position: absolute;
-    right: 24px;
-    top: 20px;
-    font-size: 32px;
-    font-weight: 400;
-    color: #94a3b8;
-    cursor: pointer;
-    transition: color 0.2s;
-    line-height: 1;
-}
-
-.close-version-modal:hover {
-    color: #0f172a;
-}
-
-@keyframes modalSlideIn {
-    from {
-        transform: translateY(-20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@media (max-width: 600px) {
-    .version-options {
-        flex-direction: column;
-    }
-    .version-modal-content {
-        padding: 30px 20px;
-    }
-}
     /* Hide overlapping tablet mockup and vectors on mobile screens */
     .tablet-mockup {
         display: none !important;
@@ -1700,7 +1540,7 @@ footer {
 
     /* Center and format the 3D phone mockup */
     .hero-graphic {
-        height: 400px;
+        height: 430px;
         margin-top: 20px;
         display: flex;
         justify-content: center;
@@ -1711,8 +1551,8 @@ footer {
         position: relative;
         left: auto;
         bottom: auto;
-        width: 190px;
-        height: 380px;
+        width: 200px;
+        height: 410px;
         margin: 0 auto;
         transform: perspective(1000px) rotateY(8deg) rotateX(4deg) rotateZ(-1.5deg);
         z-index: 2;
@@ -1720,10 +1560,22 @@ footer {
 
     /* Force all widgets and containers to adapt smoothly to screen width */
     .study-mockup-frame,
-    .calc-demo-container,
-    .calendar-heatmap-mock,
-    .drawer-mockup {
+    .calc-demo-container {
         max-width: 100% !important;
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .calendar-heatmap-mock {
+        max-width: 320px !important;
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .drawer-mockup {
+        max-width: 290px !important;
         width: 100% !important;
         margin-left: auto !important;
         margin-right: auto !important;
